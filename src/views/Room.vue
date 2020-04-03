@@ -18,7 +18,7 @@
     </v-navigation-drawer>
     <v-container>
       <div v-for="message in messages" :key="message.id">
-        <p class="overline">{{ message.author }} on {{ message.createdAt.toLocaleString() }}</p>
+        <p class="overline">{{ message.author }} on {{ message.createdAt.toDate().toLocaleString() }}</p>
         <p>{{ message.message }}</p>
       </div>
     </v-container>
